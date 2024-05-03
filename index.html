@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+   <title>TO-DO APP</title>
+   
+  
+    <link rel="stylesheet" href="/To-Do-App/style.css">
+    <link rel="stylesheet" href="./bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./fontawesome-free-6.5.2-web/css/all.min.css">
+    
+</head>
+<body>
+   <h1 class="text-center p-2"> <i class="fa-solid fa-circle-check" style="color: #198754;"></i> MY TO-<span class="">DO</span> APP</h1>
+<div class="d-flex">
+    <input type="text" class="form-control w-25 m-auto p-2 mb-4" oninput="searchByTitle(this.value);" placeholder="search by title">
+    <input type="text" class="form-control w-25 m-auto p-2 mb-4" oninput="searchByTask(this.value);" placeholder="search by task">
+</div>
+
+ <div class="container shadow bg-light p-3" >
+    <div class="mb-3  m-auto ">
+        <input type="text" class="form-control" placeholder="Enter Title" id="titleInput" >
+      </div>
+      <div class="mb-3 m-auto">
+        <input type="text" class="form-control" id="taskInput" placeholder="Enter Task">
+      </div>
+      <button class="btn btn-success mb-3 d-block" id="submit-button" onclick="addToDo()">Add Task</button>
+    <button class="btn btn-warning mb-3 d-none"  id="update-button" onclick="updateTodo()">update Task</button>
+ </div>
+
+ <div class="mx-auto w-75">
+<div class="bg-white my-5" id="todoContainer">
+
+</div>
+ </div>
+
+ 
+    
+
+
+
+
+
+
+
+
+
+
+ <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<link rel="stylesheet" href="./bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js">
+    <script src="/To-Do-App/script.js"></script>
+</body>
+</html>
